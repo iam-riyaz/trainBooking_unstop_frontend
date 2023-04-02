@@ -1,0 +1,22 @@
+.box{
+    margin: 10px;
+    width: 350px;
+    height: 550px;
+    border: 1px solid rgb(0, 0, 0);
+}
+h3{
+    font-size: 20px;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    margin: 6px;
+    border-radius: 20%;
+    padding: 5px;
+    color: black;
+}
+.flax-box{
+    padding: 10px;
+}
