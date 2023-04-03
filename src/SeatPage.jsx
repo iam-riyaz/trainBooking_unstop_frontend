@@ -129,6 +129,7 @@ export const SeatPage = () => {
       })
       .then((res) => {
         console.log({ res });
+        navigate("/")
       })
       .catch((err) => {
         console.log(err);
