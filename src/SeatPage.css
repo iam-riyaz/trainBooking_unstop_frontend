@@ -13,10 +13,53 @@ button{
     height: 30px;
     border: 2px solid black;
     margin: 6px;
-    border-radius: 20%;
+    border-radius: 5px;
     padding: 5px;
     color: black;
 }
+.back-btn, .reset-btn{
+    font-size: large;
+    margin: 50px;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: rgb(155, 91, 9);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
 .flax-box{
     padding: 10px;
+}
+
+.booked{
+    font-size: 12px;
+   padding: 5px;
+   display: inline-block;
+   border: 2px solid gray;
+   color: white;
+   background-color: gray;
+   border-radius: 5px;
+   margin: 5px;
+}
+.just-booked{
+    font-size: 12px;
+   padding: 5px;
+   display: inline-block;
+   border: 2px solid green;
+   color: white;
+   background-color: green;
+   border-radius: 5px;
+   margin: 5px;
+
+}
+.empty{
+    font-size: 12px;
+   padding: 5px;
+   display: inline-block;
+   border: 2px solid black;
+   margin: 5px;
+   background-color: white;
+   border-radius: 5px;
+    
 }

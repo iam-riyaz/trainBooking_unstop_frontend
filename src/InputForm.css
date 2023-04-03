@@ -1,3 +1,14 @@
 p{
     color: red;
 }
+
+.book-btn{
+    padding: 5px;
+    background-color: rgb(91, 99, 191);
+    color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}

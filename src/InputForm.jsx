@@ -18,19 +18,20 @@ export const InputForm = () => {
         .then((res) => {
           arr = res.data.data;
 
-          for (let i = 0; i < arr.length; i++) {
-            for (let j = 0; j < arr[i].length; j++) {
-              arr[i][j].justBooked = false;
+          for (const element of arr) {
+            for (const ele of element) {
+              ele.justBooked = false;
             }
           }
 
           localStorage.setItem("data", JSON.stringify(arr));
+          navigate("/seatpage");
         })
         .catch((err) => {
           console.log(err);
         });
 
-      navigate("/seatpage");
+     
 
       localStorage.setItem("seatNumberInput", seatValue);
     }
@@ -51,8 +52,8 @@ export const InputForm = () => {
       {seatValue > 7 || seatValue == 0 ? (
         <p>*please enter a value between 1 to 7</p>
       ) : null}
-      <Button mt={5} type="submit" onClick={onHandleClick}>
-        {" "}
+      <Button class="book-btn" mt={5} type="submit" onClick={onHandleClick}>
+        
         Book
       </Button>
     </>
