@@ -52,7 +52,7 @@ export const InputForm = () => {
       {seatValue > 7 || seatValue == 0 ? (
         <p>*please enter a value between 1 to 7</p>
       ) : null}
-      <Button class="book-btn" mt={5} type="submit" onClick={onHandleClick}>
+      <Button id="book-btn" mt={5} type="submit" onClick={onHandleClick}>
         
         Book
       </Button>

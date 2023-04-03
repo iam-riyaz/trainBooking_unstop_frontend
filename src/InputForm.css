@@ -2,7 +2,7 @@ p{
     color: red;
 }
 
-.book-btn{
+#book-btn{
     padding: 5px;
     background-color: rgb(91, 99, 191);
     color: white;
