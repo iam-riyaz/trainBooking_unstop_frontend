@@ -14,7 +14,7 @@ export const InputForm = () => {
     if (seatValue > 0 && seatValue <= 7) {
       let arr = [];
       axios
-        .get("http://localhost:2000/get_data")
+        .get("https://trainbackend.onrender.com/get_data")
         .then((res) => {
           arr = res.data.data;
 

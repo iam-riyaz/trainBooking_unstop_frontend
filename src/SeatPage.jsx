@@ -96,7 +96,7 @@ export const SeatPage = () => {
 
   // save the latest booked seate data in database
   axios
-    .post("http://localhost:2000/book_seats", {
+    .post("https://trainbackend.onrender.com/book_seats", {
       data: JSON.parse(arr),
     })
     .then((res) => {
@@ -124,7 +124,7 @@ export const SeatPage = () => {
     let newArr = JSON.stringify(arr);
 
     axios
-      .post("http://localhost:2000/book_seats", {
+      .post("https://trainbackend.onrender.com/book_seats", {
         data: JSON.parse(newArr),
       })
       .then((res) => {
