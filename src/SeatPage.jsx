@@ -138,7 +138,7 @@ export const SeatPage = () => {
 
   // when no seats are available
   if (!bookedStatus) {
-    alert("Seats running out of availibility");
+    alert("Seats running out of availibility, all bookings will be reset, click OK");
     onReset();
     navigate("/seatpage");
   }
