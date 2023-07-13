@@ -157,15 +157,15 @@ export const SeatPage = () => {
                     <div className="row">
                       {e.map((k) => {
                         if (k.bookingStatus == "empty") {
-                          return <button> {k.seatNumber} </button>;
+                          return <button className="sheats-btn"> {k.seatNumber} </button>;
                         } else if (
                           k.bookingStatus == "fill" &&
                           k.justBooked == true
                         ) {
                           return (
-                            <button
+                            <button className="sheats-btn"
                               style={{
-                                border: "2px solid green",
+                                
                                 color: "white",
                                 backgroundColor: "green",
                               }}
@@ -176,8 +176,9 @@ export const SeatPage = () => {
                         } else {
                           return (
                             <button
+                            className="sheats-btn"
                               style={{
-                                border: "2px solid gray",
+                                
                                 color: "white",
                                 backgroundColor: "gray",
                               }}
@@ -198,15 +199,17 @@ export const SeatPage = () => {
         <div>
           <div>
             <button className="back-btn" onClick={onBack}>
-              Book More..
+              Book More
             </button>
             <button className="reset-btn" onClick={onReset}>
-              Reset and Book More..
+              Reset and Book More
             </button>
           </div>
           <hr />
           <div>
-            <div className="booked">Sold Out</div>
+            <span style={{fontSize:"20px"}}>ⓘ</span>
+            <div className="booked">Filled</div>
+            
             <div className="just-booked">Booked</div>
             <div className="empty">Empty</div>
           </div>
